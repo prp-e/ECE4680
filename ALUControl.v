@@ -1,8 +1,8 @@
 module ALUControl(ALUOp, FuncCode, ALUCtl); 
  input[1:0] ALUOp;
  input[5:0] FuncCode; 
- output[3:0] reg  ALUCtl;  
-   always case(FuncCode)
+ output reg [3:0]  ALUCtl;  
+   always@* case(FuncCode)
    32: ALUCtl <= 2;
    34: ALUCtl <= 6;
    36: ALUCtl <= 0;

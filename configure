@@ -1,0 +1,3 @@
+#!/bin/sh
+
+which iverilog || echo "Install 'iverilog' first!"
